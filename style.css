@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --body-background: #121214;
+  --timer: white;
+  --controllers: #c4c4cc;
+
+  --background-cards: #29292e;
+  --background-cards-hover: #0a3442;
+  --icons-card: #c4c4cc;
+  --icons-card-hover: white;
+  --icon-volume-slider: white;
+  --icon-button-volume: white;
+}
+
+.light {
+  --body-background: white;
+  --timer: #323238;
+  --controllers: #323238;
+
+  --background-cards: #E1E1E6;
+  --background-cards-hover: #02799D;
+  --icons-card: #323238;
+  --icon-volume-slider: #323238;
+  --icon-button-volume: #323238;
+
+  --icons-card-hover: white;
+  --icon-volume-slider-hover: white;
+  --icon-button-volume-hover: white;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background: var(--body-background);
+  font-family: 'Roboto';
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  align-self: center;
+  justify-self: center;
+}
+
+#timer span {
+  color: var(--timer);
+  font-size: 12.7rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button path {
+  fill: var(--controllers);
+}
+
+
+
+
+#controllers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  margin-top: 2rem;
+}
+
+#controllers .pause svg{
+  width: 48px;
+  height: 48px;
+}
+
+
+
+
+
+.cards {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.sections {
+  display: flex;
+  justify-content: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+
+.card {
+  background: var(--background-cards);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 138px;
+  height: 152px;
+  border-radius: 24px;
+}
+
+.card path {
+  fill: var(--icons-card);
+}
+
+.card path:hover {
+  
+}
+
+.groupOne {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.groupTwo {
+   display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.darkMode {
+  display: flex;
+  position: absolute;
+left: 92.19%;
+right: 5%;
+top: 8.89%;
+}
+
+.lightMode {
+  display: flex;
+  position: absolute;
+  left: 92.19%;
+  right: 5%;
+  top: 8.89%;
+}
+
+
+.card:hover{
+  background: var(--background-cards-hover);
+  fill: var(--icons-card-hover);
+  
+  cursor: pointer;
+}
+
+
+
+input[type="range"] {
+  margin-top: 3.2rem;
+  appearance: none;
+  background: var(--icon-volume-slider);
+  border-radius: 5px;
+  height: 4px;
+  outline: none;
+  width: 9rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--icon-button-volume);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+left: 91%;
+right: 5%;
+top: 85%;
+}
+
+
