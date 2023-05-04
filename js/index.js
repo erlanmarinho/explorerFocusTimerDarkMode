@@ -15,25 +15,14 @@ import {
 const controls = Controls({
   buttonDarkMode,
   buttonLightMode,
-  bodyDarkMode
+  bodyDarkMode,
+  buttonPlay,
+  buttonPause
   
 })
 
 console.log(controls)
 
-function renderDisplay() {
-
-  buttonPlay.addEventListener("click", function () {
-    buttonPlay.classList.add("hide")
-    buttonPause.classList.remove("hide")
-    buttonStop.classList.remove("hide")
-  })
-
-  buttonPause.addEventListener("click", function () {
-    buttonPlay.classList.remove("hide")
-    buttonPause.classList.add("hide")
-  })
-}
 
 Events({ controls })
 

@@ -18,4 +18,12 @@ export default function ({controls}) {
   buttonLightMode.addEventListener("click", function () {
     controls.lightMode()
   })
+
+  buttonPlay.addEventListener("click", function () {
+    controls.play()
+  })
+
+   buttonPause.addEventListener("click", function () {
+    controls.pause()
+   })
 }
